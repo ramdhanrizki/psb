@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^home main.php [NC,L]
+RewriteRule ^login login.php [NC,L]
+RewriteRule ^pendaftaran.html$ main.php?page=pendaftaran [NC,L]
+RewriteRule ^calonsiswa.html$ main.php?page=daftarcalon [NC,L]
+RewriteRule ^kategori/([0-9a-zA-Z_-]+)$ index.php?kategori=$1 [NC,L]
+Options All -Indexes
